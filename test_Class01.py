@@ -24,6 +24,10 @@ class TestClass01:
 
         assert 2 == 2
 
+    def test_method03(self):
+
+        assert 2 == 3
+
     def teardown_class(self):
 
         print("自动化测试结束-{}".format(self.strTime))
