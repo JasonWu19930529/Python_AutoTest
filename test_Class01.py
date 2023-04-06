@@ -1,6 +1,10 @@
 import time
+import allure
 
 
+@allure.feature("测试采购合同模块")
+@allure.parent_suite("第一级目录test_element_save.py")
+@allure.suite("第二级目录TestElementSave")
 class TestClass01:
 
     now = int(time.time())
@@ -19,7 +23,6 @@ class TestClass01:
     def test_method02(self):
 
         assert 2 == 2
-
 
     def teardown_class(self):
 

@@ -2,6 +2,8 @@
 
 # Press Shift+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+import os
+
 import pytest
 
 
@@ -12,6 +14,7 @@ def print_hi(name):
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    pytest.main(["./test_Class01.py", "-s", '-q'])
+    pytest.main(["./", "-s", '-q', '--alluredir', './result'])
+    os.system('allure generate ./result -o ./report --clean')
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
