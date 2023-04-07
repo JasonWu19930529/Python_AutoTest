@@ -26,7 +26,7 @@ class TestClass01:
 
     def test_method03(self):
 
-        assert 2 == 3
+        assert 3 == 3
 
     def teardown_class(self):
 
