@@ -28,6 +28,14 @@ class TestClass01:
 
         assert 3 == 3
 
+    def test_method04(self):
+
+        assert 4 == 4
+
+    def test_method05(self):
+
+        assert 5 == 5
+
     def teardown_class(self):
 
         print("自动化测试结束-{}".format(self.strTime))
